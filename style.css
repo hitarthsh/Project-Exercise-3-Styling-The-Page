@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  color: #47fc00;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://images.unsplash.com/photo-1734971702106-9b7170815db2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDM2fENEd3V3WEpBYkV3fHxlbnwwfHx8fHw%3D');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 1;
+  z-index: -1;
+}
+
+header h1 {
+  padding: 1rem;
+  font-size: 3.125rem;
+}
+
+h2 {
+  font-size: 2.813rem;
+  margin-bottom: 1.2rem;
+}
+
+h3 {
+  font-size: 2.125rem;
+  margin-bottom: 1.2rem;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+li {
+  font-size: 1.125rem;
+}
+
+nav {
+  background-color: #9ee914d7;
+  padding: 1rem;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: gold;
+}
+
+main {
+  padding: 0 1.5rem;
+}
+
+.blog-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+ul,
+ol {
+  margin-bottom: 1.2rem;
+  padding-left: 1.8rem;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 1.125rem;
+}
